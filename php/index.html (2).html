@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                   <!----------Question2 :------------> 
+    <form action="exercice2.php" method="post">
+        <h1>Formulaire de recherche : </h1>
+        Enter le nom de l'employé: 
+        <input type="text" name="n"><br><br>
+        <input type="submit" value="Rechercher">  <br><br> <br><br><br>
+    </form>
+
+                   <!----------Question3 :------------>
+    <form action="exercice2.php" method="post">
+        <h1> Formulaire de connexion : </h1>
+        Email: <input type="email" name="em"> <br><br>
+        Mot de passe: <input type="password" name="m"> <br><br>
+        <input type="submit" value="Se connecter" id=""> <br><br>
+    </form>
+
+                   <!----------Question5 :------------>
+    <form action="exercice2.php" method="post">
+        <h1> Formulaire de commentaire : </h1>
+        Commentaire: <input type="text" name="Commentaire"><br><br>
+        <input type="submit" value="Soumettre"><br><br><br>
+    </form>
+                    <!----------Question7 :------------->
+    <form action="exercice2.php" method="POST" enctype="multipart/form-data">
+        <h1> Formulaire de Fichier CSV : </h1>
+        <input type="file" name="f" /><br><br>
+        <input type="submit" value="Soumettre"><br><br><br>     
+    </form>
+                    <!----------Question8 :------------->
+    <form action="exercice2.php" method="post">
+        <label>Prod A </label>
+        <input type="checkbox" name="produit_check[]" value="Prod A"><br><br>
+                
+        <label>Prod B</label>
+        <input type="checkbox" name="produit_check[]" value="Prod B" ><br><br>
+                
+        <label>Prod C</label>
+        <input type="checkbox" name="produit_check[]" value="Prod C"><br><br>
+                
+    
+                
+        <input type="submit" value="Soumettre"><br><br><br>
+                    </form>
+
+                    <!----------Question10 :------------>
+    <form action="exercice2.php" method="POST">
+        <h1> Formulaire de gestion : </h1>
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" required><br><br>
+        
+        <label for="email">Email :</label>
+        <input type="email" name="email" required><br><br>
+
+        <input type="submit" name="action" value="ajouter">
+        <input type="submit" name="action" value="modifier">
+        <input type="submit" name="action" value="supprimer">
+    </form>
+</body>
+</html>
